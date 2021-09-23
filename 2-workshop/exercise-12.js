@@ -15,6 +15,27 @@ function exercise12() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  let prime = true;
+  let counter =0;
+
+  for(let i=2 ; i<=200 ; i++ )
+  {
+    for(let j=2; j<=100;j++)
+    {
+      if(i%j==0)
+      {       
+        counter++;
+      }
+    }
+
+    if (counter <2)
+    {
+      console.log(i);
+    }
+
+    
+    counter =0;
+  }
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
@@ -27,5 +48,6 @@ function exercise12() {
 
 // Once you are done type the following in the terminal to test your answer(s).
 // yarn test exercise-12
+exercise12();
 
 module.exports = exercise12;
